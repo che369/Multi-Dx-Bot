@@ -4,8 +4,6 @@
  [![Contributors](https://img.shields.io/github/contributors/sahadz/multi-dx-bot)](https://github.com/sahadz/multi-dx-bot/graphs/contributors)
  ![Last Commit](https://img.shields.io/github/last-commit/sahadz/multi-Dx-bot/main)
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/che369/Multi-Dx-Bot)
-
 > A Telegram multi purpose bot based on [Pyrogram](https://github.com/pyrogram/pyrogram)
 
 ## Features
