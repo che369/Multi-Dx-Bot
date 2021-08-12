@@ -1,0 +1,55 @@
+{
+    "name": "Telegram media info bot",
+    "description": "A Telegram bot for generate media info",
+    "keywords": [
+        "telegram",
+        "Media",
+        "Info",
+        "bot"
+    ],
+    "repository": "https://github.com/che369/Multi-Dx-Bot",
+    "website": "https://telegram.dog/AbirHasan2005",
+    "success_url": "https://t.me/MediaInfo_Robot",
+    "env": {
+        "API_ID": {
+            "description": "Get this value from my.telegram.org or @TeleORG_Bot"
+        },
+        "API_HASH": {
+            "description": "Get this value from my.telegram.org or @TeleORG_Bot"
+        },
+        "AUTH_USERS" : {
+            "description": "Id"
+        },
+        "BOT_TOKEN": {
+            "description": "Get this from @BotFather XD"
+        },
+        "DB_URI" : {
+            "description": "DB URI"
+        },
+        "DOWNLOAD_LOCATION": {
+            "description": "Files download path. You can keep default. Should not end with '/'",
+            "required": false,
+            "value": "./downloads"
+        },
+        "SESSION_NAME": {
+            "description": "Bot's Session Name."
+        },
+        "WORKERS": {
+            "description": "WORKERS"
+        }
+    },
+    "buildpacks": [ 
+        {
+            "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+        }, 
+        { 
+            "url": "heroku/python"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
+}
